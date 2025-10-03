@@ -111,26 +111,26 @@ Dice d80 = new Dice(-100,-100,0);
 Dice d81 = new Dice(-100,-100,0);
 
 void setup(){
-  System.out.println("setup called");
+  //System.out.println("setup called");
   size(450,500);
   background(0);
 }
 
 void draw(){
-  System.out.println("draw function called");
+  //System.out.println("draw function called");
   //int total = 0;
   fill(0,0,0,10);
   rect(0,0,500,500);
   //https://art.pixilart.com/thumb/f1c08dadc7c3e96.png
   //Make a 9x9 grid and color each dice accordingly
   if(g==0){
-    System.out.println("First loop");
+    //System.out.println("First loop");
     total -= d1.numDie;
-    System.out.println("First call of total");
+    //System.out.println("First call of total");
     d1 = new Dice(0,0,col1); d1.show();
     total += d1.numDie;
   }else if(g==5){
-    System.out.println("Second Layer");
+    //System.out.println("Second Layer");
     total -= d2.numDie;
     d2 = new Dice(size1,size0,col2); d2.show();
     total -= d3.numDie;
@@ -273,7 +273,7 @@ class Dice{
     myX = x;
     myY = y;
     myColor = col;
-    System.out.println("Dice loaded");
+    //System.out.println("Dice loaded");
   }
   void show(){
     fill(myColor);
